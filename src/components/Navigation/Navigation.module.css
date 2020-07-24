@@ -1,0 +1,37 @@
+.navigation {
+  grid-area: nav;
+  background-color: #F0F2F5;
+}
+
+.whrapper {
+  margin-top: 5px;
+}
+
+.item {
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.item:last-child {
+  margin-top: 40px;
+}
+
+.item:hover,
+.item:active,
+.item:focus {
+  transition: all .3s;
+  background-color: #E4E6E9;
+}
+
+.item.active {
+  background-color: #E4E6E9;
+}
+
+.link,
+.link:visited {
+  font-size: 20px;
+  color: #000;
+}
