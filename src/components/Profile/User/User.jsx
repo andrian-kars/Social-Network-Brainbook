@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './User.module.css'
 
-function User() {
+const User = () => {
     return (
         <section className={s.user}>
             <div className={s.photo_whrapper}>

@@ -4,7 +4,7 @@ import Posts from './Posts/Posts'
 import User from './User/User'
 import Banner from './Banner/Banner'
 
-function Profile() {
+const Profile = () => {
     return (
         <div className={s.profile}>
             <Banner />

@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Banner.module.css'
 
-function Banner() {
+const Banner = () => {
     return (
         <section className={s.banner}>
         </section>

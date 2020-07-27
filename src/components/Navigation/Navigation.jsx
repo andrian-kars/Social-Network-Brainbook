@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Navigation.module.css'
 
-function Navigation() {
+const Navigation = () => {
     return (
         <nav className={s.navigation}>
             <ul className={s.whrapper}>

@@ -49,13 +49,13 @@
   padding: 7px 15px;
   align-self: flex-end;
   cursor: pointer;
-  background-color: #1877F2;
+  background-color: #272727;
   color: #fff;
 }
 
 .input:hover,
 .input:active,
 .input:focus {
-  background-color: #1771E6;
+  background-color: #1A1A1A;
   transition: all .3s;
 }

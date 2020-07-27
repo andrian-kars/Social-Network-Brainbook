@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Footer.module.css'
 
-function Footer() {
+const Footer = () => {
     return (
         <footer className={s.footer}>
             <p className={s.copyright}>Copyright 2020</p>
