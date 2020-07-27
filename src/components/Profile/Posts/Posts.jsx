@@ -10,9 +10,9 @@ const Posts = () => {
                 <textarea className={s.textarea} name="text" placeholder="Your news..."></textarea>
                 <input className={s.input} type="submit" value="Send" />
             </form>
-            <Post message="I'm doing great today!" />
-            <Post message="React is such a cool thing!" />
-            <Post message="It's my first React program!" />
+            <Post message="I'm doing great today!" likesCount="228" />
+            <Post message="React is such a cool thing!" likesCount="322" />
+            <Post message="It's my first React program!" likesCount="696" />
         </section>
     )
 }
