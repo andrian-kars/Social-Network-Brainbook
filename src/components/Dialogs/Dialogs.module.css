@@ -1,0 +1,27 @@
+.whrapper {
+    display: flex;
+    min-height: 80vh;
+    margin-top: 5px;
+}
+
+/* .dialogs {
+
+} */
+
+.dialog {
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.dialog.active {
+    background-color: #E4E6E9;
+}
+
+.messages {
+    margin-left: 50px;
+}
+
+.message {
+    padding: 15px;
+}

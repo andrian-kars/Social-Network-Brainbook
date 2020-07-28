@@ -10,7 +10,6 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import { Route, BrowserRouter } from 'react-router-dom';
 
-
 function App() {
   return (
     <BrowserRouter>
