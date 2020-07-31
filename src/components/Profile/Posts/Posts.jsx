@@ -2,7 +2,11 @@ import React from 'react'
 import s from './Posts.module.css'
 import Post from './Post/Post'
 
-const Posts = () => {
+const Posts = (props) => {
+    let postsElements =
+        props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />)
+    // let postsElements = postsData.map((p, i) => <Post message={p.message} likesCount={p.likesCount} key={i} />)
+
     return (
         <section className={s.posts}>
             <p className={s.heading}>My posts</p>
@@ -10,9 +14,7 @@ const Posts = () => {
                 <textarea className={s.textarea} name="text" placeholder="Your news..."></textarea>
                 <input className={s.input} type="submit" value="Send" />
             </form>
-            <Post message="I'm doing great today!" />
-            <Post message="React is such a cool thing!" />
-            <Post message="It's my first React program!" />
+            {postsElements}
         </section>
     )
 }
