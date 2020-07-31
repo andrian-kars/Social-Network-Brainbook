@@ -11,7 +11,7 @@ const Profile = (props) => {
         <div className={s.profile}>
             <Banner />
             <User />
-            <Posts posts={props.posts} />
+            <Posts posts={props.state.posts} />
         </div>
     )
 }
