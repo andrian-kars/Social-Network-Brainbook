@@ -4,12 +4,14 @@ import Posts from './Posts/Posts'
 import User from './User/User'
 import Banner from './Banner/Banner'
 
-const Profile = () => {
+const Profile = (props) => {
+
+
     return (
         <div className={s.profile}>
             <Banner />
             <User />
-            <Posts />
+            <Posts posts={props.posts} />
         </div>
     )
 }
