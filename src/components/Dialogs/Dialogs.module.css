@@ -9,9 +9,7 @@
 } */
 
 .messages {
+    position: relative;
+    width: 100%;
     margin-left: 50px;
-}
-
-.message {
-    padding: 15px;
 }
