@@ -1,6 +1,9 @@
 .navigation {
-  grid-area: nav;
+  grid-column-start: 1;
+  grid-row-start: 2;
   background-color: #F0F2F5;
+  position: fixed;
+  top: 90px;
 }
 
 .whrapper {
@@ -11,6 +14,7 @@
   display: block;
   cursor: pointer;
   margin-bottom: 5px;
+  width: 200px;
 }
 
 .item:last-child {

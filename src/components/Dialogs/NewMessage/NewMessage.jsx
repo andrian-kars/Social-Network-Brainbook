@@ -1,19 +1,26 @@
 import React from 'react'
 import s from './NewMessage.module.css'
-
-let newMessageElement = React.createRef()
-
-let addMessage = () => {
-    let text = newMessageElement.current.value
-    alert(text)
-}
+import { addMessageActionCreator, updateNewMessageTextActionCreator } from './../../../redux/state'
 
 const NewMessage = (props) => {
+    let newMessageElement = React.createRef()
+
+    let addNewMessage = () => {
+        props.dispatch(addMessageActionCreator())
+    }
+
+    let onMessageChange = () => {
+        let text = newMessageElement.current.value
+        props.dispatch(updateNewMessageTextActionCreator(text))
+    }
+
     return (
-        <div>
+        <div className={s.whrapper}>
             <form className={s.new_message}>
-                <textarea className={s.textarea} ref={newMessageElement} name="text" placeholder="Message..."></textarea>
-                <input className={s.input} onClick={addMessage} type="submit" value="Send" />
+                <textarea className={s.textarea} onChange={onMessageChange}
+                    ref={newMessageElement} value={props.newMessageText}
+                    name="text" placeholder="Message..." />
+                <input className={s.input} onClick={addNewMessage} type="button" value="Send" />
             </form>
         </div>
     )
