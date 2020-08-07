@@ -1,5 +1,8 @@
-const navigationReducer = (state, action) => {
+let initialState = {
 
+}
+
+const navigationReducer = (state = initialState, action) => {
 
 
     return state
