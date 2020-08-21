@@ -5,7 +5,7 @@ const User = () => {
     return (
         <section className={s.user}>
             <div className={s.photo_whrapper}>
-                <img className={s.photo} src="./user-photo.jpg" alt="user" />
+                <img className={s.photo} src="./../../../images/user-photo.jpg" alt="user" />
             </div>
             <div className={s.info}>
                 <h2 className={s.name}>Andrian K.</h2>
