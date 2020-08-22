@@ -18,13 +18,13 @@ function App(props) {
         <Navigation />
         <main className="main">
           <Switch>
-            <Route path="brainbook/profile" render={() => <Profile
+            <Route path="/brainbook/profile" render={() => <Profile
               profilePage={props.state.profilePage} dispatch={props.dispatch} />} />
-            <Route path="brainbook/dialogs" render={() => <Dialogs
+            <Route exact path="/brainbook/dialogs" render={() => <Dialogs
               store={props.store} dispatch={props.dispatch} />} />
-            <Route path="brainbook/news" render={() => <News />} />
-            <Route path="brainbook/music" render={() => <Music />} />
-            <Route path="brainbook/settings" render={() => <Settings />} />
+            <Route path="/brainbook/news" render={() => <News />} />
+            <Route path="/brainbook/music" render={() => <Music />} />
+            <Route path="/brainbook/settings" render={() => <Settings />} />
             <Route render={() => <Profile
               profilePage={props.state.profilePage} dispatch={props.dispatch} />} />
           </Switch>

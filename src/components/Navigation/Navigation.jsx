@@ -7,19 +7,19 @@ const Navigation = () => {
         <nav className={s.navigation}>
             <ul className={s.whrapper}>
                 <li className={s.item}>
-                    <NavLink className={s.link} activeClassName={s.active} to="/profile">Profile</NavLink>
+                    <NavLink className={s.link} activeClassName={s.active} to="/brainbook/profile">Profile</NavLink>
                 </li>
                 <li className={s.item}>
-                    <NavLink className={s.link} activeClassName={s.active} to="/dialogs">Messages</NavLink>
+                    <NavLink className={s.link} activeClassName={s.active} to="/brainbook/dialogs">Messages</NavLink>
                 </li>
                 <li className={s.item}>
-                    <NavLink className={s.link} activeClassName={s.active} to="/news">News</NavLink>
+                    <NavLink className={s.link} activeClassName={s.active} to="/brainbook/news">News</NavLink>
                 </li>
                 <li className={s.item}>
-                    <NavLink className={s.link} activeClassName={s.active} to="/music">Music</NavLink>
+                    <NavLink className={s.link} activeClassName={s.active} to="/brainbook/music">Music</NavLink>
                 </li>
                 <li className={s.item}>
-                    <NavLink className={s.link} activeClassName={s.active} to="/settings">Settings</NavLink>
+                    <NavLink className={s.link} activeClassName={s.active} to="/brainbook/settings">Settings</NavLink>
                 </li>
             </ul>
         </nav>
