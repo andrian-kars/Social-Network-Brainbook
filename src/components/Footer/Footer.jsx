@@ -1,11 +1,12 @@
 import React from 'react'
 import s from './Footer.module.css'
+import logo from './../../images/logo.png'
 
 const Footer = () => {
     return (
         <footer className={s.footer}>
             <p className={s.copyright}>Copyright 2020</p>
-            <a href="./../../../../"><img className={s.logo} src="./../../../images/logo.png" alt="logo" /></a>
+            <a href="./../../../../"><img className={s.logo} src={logo} alt="logo" /></a>
         </footer>
     )
 }
