@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/brainbook/static/css/main.83194d2c.chunk.css",
+    "main.js": "/brainbook/static/js/main.acf109be.chunk.js",
+    "main.js.map": "/brainbook/static/js/main.acf109be.chunk.js.map",
+    "runtime-main.js": "/brainbook/static/js/runtime-main.796700b5.js",
+    "runtime-main.js.map": "/brainbook/static/js/runtime-main.796700b5.js.map",
+    "static/js/2.aeeeff46.chunk.js": "/brainbook/static/js/2.aeeeff46.chunk.js",
+    "static/js/2.aeeeff46.chunk.js.map": "/brainbook/static/js/2.aeeeff46.chunk.js.map",
+    "index.html": "/brainbook/index.html",
+    "precache-manifest.7ec7c7603d1a13046a4015a617112ce4.js": "/brainbook/precache-manifest.7ec7c7603d1a13046a4015a617112ce4.js",
+    "service-worker.js": "/brainbook/service-worker.js",
+    "static/css/main.83194d2c.chunk.css.map": "/brainbook/static/css/main.83194d2c.chunk.css.map",
+    "static/js/2.aeeeff46.chunk.js.LICENSE.txt": "/brainbook/static/js/2.aeeeff46.chunk.js.LICENSE.txt",
+    "static/media/Banner.module.css": "/brainbook/static/media/banner.3251c62e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.796700b5.js",
+    "static/js/2.aeeeff46.chunk.js",
+    "static/css/main.83194d2c.chunk.css",
+    "static/js/main.acf109be.chunk.js"
+  ]
+}
