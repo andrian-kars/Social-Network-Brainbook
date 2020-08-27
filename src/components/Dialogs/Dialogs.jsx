@@ -2,15 +2,23 @@ import React from 'react'
 import s from './Dialogs.module.css'
 import DialogItem from './DialogItem/DialogItem'
 import Message from './Message/Message'
-import NewMessage from './NewMessage/NewMessage'
 
 const Dialogs = (props) => {
-    let state = props.store.getState().dialogsPage
-
     let dialogsElements =
-        state.dialogs.map(d => <DialogItem name={d.name} id={d.id} />)
+        props.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id} />)
     let messagesElements =
-        state.messages.map(m => <Message message={m.message} id={m.id} />)
+        props.dialogsPage.messages.map(m => <Message message={m.message} id={m.id} />)
+
+    let newMessageElement = React.createRef()
+
+    let addNewMessage = () => {
+        props.addNewMessage()
+    }
+
+    let onMessageChange = () => {
+        let text = newMessageElement.current.value
+        props.onMessageChange(text)
+    }
 
     return (
         <div className={s.whrapper}>
@@ -21,10 +29,12 @@ const Dialogs = (props) => {
                 <div className={s.messages_whrapper}>
                     {messagesElements}
                 </div>
-                <NewMessage
-                    messages={state.messages}
-                    newMessageText={state.newMessageText}
-                    dispatch={props.dispatch} />
+                <form className={s.new_message}>
+                    <textarea className={s.textarea} onChange={onMessageChange}
+                        ref={newMessageElement} value={props.dialogsPage.newMessageText}
+                        name="text" placeholder="Message..." />
+                    <input className={s.input} onClick={addNewMessage} type="button" value="Send" />
+                </form>
             </div>
         </div>
     )
