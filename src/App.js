@@ -1,14 +1,14 @@
 import React from 'react'
 import './App.css'
+import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Profile from './components/Profile/Profile';
-import Dialogs from './components/Dialogs/Dialogs';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
-import { Route, Switch } from 'react-router-dom';
 
 function App(props) {
   return (
@@ -18,10 +18,8 @@ function App(props) {
         <Navigation />
         <main className="main">
           <Switch>
-            <Route path="/brainbook/profile" render={() => <Profile
-              profilePage={props.state.profilePage} dispatch={props.dispatch} />} />
-            <Route exact path="/brainbook/dialogs" render={() => <Dialogs
-              store={props.store} dispatch={props.dispatch} />} />
+            <Route path="/brainbook/profile" render={() => <Profile store={props.store} />} />
+            <Route exact path="/brainbook/dialogs" render={() => <DialogsContainer store={props.store} />} />
             <Route path="/brainbook/news" render={() => <News />} />
             <Route path="/brainbook/music" render={() => <Music />} />
             <Route path="/brainbook/settings" render={() => <Settings />} />
